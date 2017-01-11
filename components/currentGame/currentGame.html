@@ -1,0 +1,28 @@
+<ion-view title="CurrentGame" cache-view="false">
+    <div class="bar bar-header bar-dark">
+        <button class="button button-positive" ng-click="toHome()">
+            Quit Game
+        </button>
+        <h1 class="title">Current Game</h1>
+    </div>
+
+
+    <ion-content class="has-header">
+        <!-- <h2 class="pageContentTitle">{{ currentCourse.name }}</h2> -->
+        <h2 class="pageContentTitle">Scores of Hole: {{ currentHole }}</h2>
+        <div class="list list-inset" ng-repeat="player in currentPlayers track by $index">
+            <div class="item">
+                <h2>{{ player.name }}</h2>
+                <br/>
+                <button id="scoresMinus" class="button button-positive" ng-click="scoreMinusOne(player)"> - </button>
+                <h2 id="currentScore">{{ player.currentHoleScore }}</h2>
+                <button id="scoresPlus" class="button button-positive" ng-click="scorePlusOne(player)"> + </button>
+            </div>
+        </div>
+
+        <div class="contentButtons">
+            <button id="moveToNextButton" class="button button-block button-positive" ng-show="gameGoing" ng-click="moveToNextHole()">Move To Next Hole</button>
+            <button id="endGameButton" class="button button-block button-positive" ng-show="gameEnd" ng-click="endGame()">End Game</button>
+        </div>
+    </ion-content>
+</ion-view>

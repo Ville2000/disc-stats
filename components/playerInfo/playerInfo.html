@@ -1,0 +1,29 @@
+<ion-view title="Player Info" cache-view="false">
+
+    <div class="bar bar-header bar-dark">
+        <button class="button button-positive" ng-click="toPlayerList()">
+            To Player List
+        </button>
+        <h1 class="title">Player Info</h1>
+    </div>
+
+    <ion-content class="has-header">
+        <div class="info_labels">
+            <h2 class="pageContentTitle">{{ currentPlayer.name }}</h2>
+            <h4 class="playerInfoContent">Games Played: {{ currentPlayer.playedGames }}</h4>
+            <h2 class="pageContentTitle">Previous Games:</h2>
+        </div>
+        <div class="list list-inset" ng-show="previousGames" ng-repeat="games in currentPlayer.previousGames">
+            <div class="item">
+                <h3>Course: {{games[1]}}</h3>
+                <p>Score: {{games[0]}}</p>
+                <p>Date: {{ games[2] }}</p>
+            </div>
+        </div>
+        <div class="list list-inset" ng-show="!previousGames">
+            <div class="item">
+                <h2>No previous games</h2>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

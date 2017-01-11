@@ -1,0 +1,128 @@
+#pageContentTitle {
+    font-family: "Berlin Sans F", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.pageContentTitle {
+    font-family: "Berlin Sans F", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+#homePageContentTitle {
+    text-align: center;
+}
+
+.contentButtons {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+    
+.item h2 {
+    font-weight: bold;
+}
+
+#setPar {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#setParButton {
+    position: absolute;
+    right: 8px;
+}
+
+#buttonMinus {
+    margin-right: 6%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#buttonPlus {
+    margin-left: 6%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#coursesInfo {
+    display: inline-block;
+}
+
+#removeButton {
+    display: inline-block;
+    float: right;
+}
+
+#changeHoles {
+    display: block;
+    text-align: center;
+}
+
+#holesMinus {
+    display: inline-block;
+    float: left;
+}
+
+#holes {
+    display: inline-block;
+    float: center;
+    
+}
+
+#holesPlus {
+    display: inline-block;
+    float: right;
+}
+
+#playerName {
+    display: inline-block;
+}
+
+#removePlayer {
+    display: inline-block;
+    float: right;
+}
+
+
+#addPlayer {
+    display: inline-block;
+    float: right;
+}
+
+#moveToNextButton {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#endGameButton {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#scoresMinus {
+    display: inline-block;
+    margin-right: 6%;
+}
+
+#currentScore {
+    display: inline-block;
+}
+
+#scoresPlus {
+    display: inline-block;
+    margin-left: 6%;
+}
+
+.playerInfoContent {
+    margin-left: 2%;
+}
+
+#home_logo {
+    display: block;
+    margin: auto;
+}

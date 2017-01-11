@@ -1,0 +1,31 @@
+<ion-view title="New Course">
+
+    <div class="bar bar-header bar-dark">
+        <button class="button button-positive" ng-click="backToCourses()">
+            To Courses
+        </button>
+        <h1 class="title">New Course</h1>
+    </div>
+    <ion-content class="has-header">
+
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input id="name" type="text" ng-model="courseName" placeholder="Name of the course">
+            </label>
+            <div class="item">
+                <div id="changeHoles">
+                    <button id="holesMinus" class="button button-positive" ng-click="decreaseHoles()">-</button>
+                    <div id="holes"><h2>Number of holes:</h2>
+                    <p>{{holeAmount}}</p></div>
+                    <button id="holesPlus" class="button button-positive" ng-click="increaseHoles()">+</button>
+                </div>
+            </div>
+            <label class="item">
+                <button class="button button-block button-positive" ng-click="setPars(courseName, holeAmount)">Set Pars</button>
+            </label>
+            <label class="item">
+                <button class="button button-block button-positive" ng-click="addCourse(courseName)">Add Course</button>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

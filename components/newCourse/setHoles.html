@@ -1,0 +1,27 @@
+<ion-view title="Set Holes" cache-view="false">
+    <div class="bar bar-header bar-dark">
+        <button class="button button-positive" ng-click="backToCourses()">
+            Cancel
+        </button>
+        <h1 class="title">Set Pars</h1>
+    </div>
+
+    <ion-content class="has-header">
+        <h2 id="pageContentTitle">Set Par for Hole #{{ currentHole }}</h2>
+
+        <div class="list list-inset">
+            <div id="setPar" class="item">
+                <button id="buttonMinus" class="button button-positive" ng-click="decreasePar()">
+                    -
+                </button>
+                {{ currentPar }}
+                <button id="buttonPlus" class="button button-positive" ng-click="increasePar()">
+                    +
+                </button>
+                <button id="setParButton" class="button button-positive" ng-click="setPar()">
+                    Set Par
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

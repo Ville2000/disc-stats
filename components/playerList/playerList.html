@@ -1,0 +1,28 @@
+<ion-view title="Player List" cache-view="false">
+    <div class="bar bar-header bar-dark">
+        <button class="button button-positive" ng-click="toHome()">
+            Home
+        </button>
+        <h1 class="title">Player List</h1>
+        <button class="button button-positive" ng-click="toNewPlayer()">
+            New player
+        </button>
+    </div>
+
+    <ion-content class="has-header">
+        <div class="list list-inset" ng-show="!noPlayers" ng-repeat="player in playersArray">
+            <div class="item item-button-right">
+                <a ng-click="test(player)">
+                    <h2>{{ player.name }}</h2>
+                </a>
+                <button class="button button-positive" ng-click="removePlayer(player)">Remove</button>
+            </div>
+        </div>
+        
+        <div class="list list-inset" ng-show="noPlayers">
+        <div class="item">
+            <h2>No players</h2>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
