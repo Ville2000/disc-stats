@@ -202,9 +202,6 @@ angular.module('myApp').service('gameService', function () {
                 }    
             }
             
-            // currentCourse.gamesPlayed += 1;
-            // this.updateCourses(currentCourse);
-            
             window.localStorage.setItem('players', JSON.stringify(players));
         },
         
